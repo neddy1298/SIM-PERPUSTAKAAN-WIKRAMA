@@ -9,15 +9,15 @@
     <meta name="author" content="Creative Tim">
     <title>Akun</title>
     <!-- Favicon -->
-    <link href="{{asset('admin/img/brand/favicon.png')}}" rel="icon" type="image/png">
+    <link href="{{secure_asset('admin/img/brand/favicon.png')}}" rel="icon" type="image/png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Icons -->
-    <link href="{{asset('admin/vendor/nucleo/css/nucleo.css')}}" rel="stylesheet">
-    <link href="{{asset('admin/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('admin/vendor/nucleo/css/nucleo.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('admin/vendor/@fortawesome/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
     <!-- Argon CSS -->
-    <link type="text/css" href="{{asset('admin/css/argon.css?v=1.0.0')}}" rel="stylesheet">
-    <script src="{{asset('admin/ckeditor/ckeditor.js')}}"></script>
+    <link type="text/css" href="{{secure_asset('admin/css/argon.css?v=1.0.0')}}" rel="stylesheet">
+    <script src="{{secure_asset('admin/ckeditor/ckeditor.js')}}"></script>
 
 </head>
 
@@ -60,11 +60,11 @@
 </script>
 <!-- Argon Scripts -->
 <!-- Core -->
-<script src="{{asset('admin/vendor/jquery/dist/jquery.min.js')}}"></script>
-<script src="{{asset('admin/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{secure_asset('admin/vendor/jquery/dist/jquery.min.js')}}"></script>
+<script src="{{secure_asset('admin/vendor/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
 <!-- Optional JS -->
-<script src="{{asset('admin/vendor/clipboard/dist/clipboard.min.js')}}"></script>
+<script src="{{secure_asset('admin/vendor/clipboard/dist/clipboard.min.js')}}"></script>
 <!-- Argon JS -->
-<script src="{{asset('admin/js/argon.js?v=1.0.0')}}"></script>
+<script src="{{secure_asset('admin/js/argon.js?v=1.0.0')}}"></script>
 
 </html>
