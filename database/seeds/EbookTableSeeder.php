@@ -13,35 +13,65 @@ class EbookTableSeeder extends Seeder
     {
         DB::table('ebook')->insert([
             [
-                'judul' => 'Android',
+                'judul' => 'Pemrograman Android',
                 'isbn' => '11706106',
                 'pengarang' => 'Imam Firmansyah',
-                'penerbit' => 'Jacks',
+                'penerbit' => 'Gramedia',
                 'jumlah_halaman' => '300',
-                'tahun_terbit' => '2018',
-                'deskripsi' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error doloribus dolor libero. Adipisci odio nemo quod omnis accusamus voluptatibus, repellat ab, ullam, voluptate delectus similique quidem eligendi suscipit aspernatur.</p>',
-                'link' => 'youtube.com',
+                'tahun_terbit' => '2023',
                 'cover' => 'android.jpg',
+                'deskripsi' => '<p>Buku lengkap tentang pemrograman Android untuk pemula hingga mahir.</p>',
+                'link' => 'android.pdf',
                 'id_kategori' => '1',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'views' => '509',
-            ], [
-                'judul' => 'Laravel',
-                'isbn' => '11706278',
-                'pengarang' => 'Neddy AP',
-                'penerbit' => 'Jacks',
-                'jumlah_halaman' => '100',
-                'tahun_terbit' => '2019',
-                'deskripsi' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error doloribus dolor libero. Adipisci odio nemo quod omnis accusamus voluptatibus, repellat ab, ullam, voluptate delectus similique quidem eligendi suscipit aspernatur.</p>',
-                'link' => 'youtube.com',
+                'views' => '919'
+            ],
+            [
+                'judul' => 'Web Development dengan Laravel',
+                'isbn' => '11706107',
+                'pengarang' => 'John Doe',
+                'penerbit' => 'Elex Media',
+                'jumlah_halaman' => '450',
+                'tahun_terbit' => '2023',
                 'cover' => 'laravel.jpg',
-                'id_kategori' => '2',
+                'deskripsi' => '<p>Panduan lengkap pengembangan web menggunakan framework Laravel.</p>',
+                'link' => 'laravel.pdf',
+                'id_kategori' => '6',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'views' => '919',
-            ]]);
-        factory(\App\Ebook::class, 52)->create();
+                'views' => '756'
+            ],
+            [
+                'judul' => 'Machine Learning Basics',
+                'isbn' => '11706108',
+                'pengarang' => 'Jane Smith',
+                'penerbit' => 'Informatika',
+                'jumlah_halaman' => '280',
+                'tahun_terbit' => '2023',
+                'cover' => 'ml.jpg',
+                'deskripsi' => '<p>Pengenalan dasar machine learning dan implementasinya.</p>',
+                'link' => 'ml.pdf',
+                'id_kategori' => '7',
+                'created_at' => now(),
+                'updated_at' => now(),
+                'views' => '634'
+            ],
+            [
+                'judul' => 'Database Design',
+                'isbn' => '11706109',
+                'pengarang' => 'David Wilson',
+                'penerbit' => 'Andi Publisher',
+                'jumlah_halaman' => '320',
+                'tahun_terbit' => '2023',
+                'cover' => 'database.jpg',
+                'deskripsi' => '<p>Teknik perancangan database yang efektif dan optimal.</p>',
+                'link' => 'database.pdf',
+                'id_kategori' => '6',
+                'created_at' => now(),
+                'updated_at' => now(),
+                'views' => '528'
+            ]
+        ]);
     }
 }
-

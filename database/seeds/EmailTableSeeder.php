@@ -13,6 +13,51 @@ class EmailTableSeeder extends Seeder
     {
         DB::table('email')->insert([
             [
+                'name' => 'John Doe',
+                'address' => 'johndoe@gmail.com',
+                'subject' => 'Pertanyaan tentang Peminjaman Buku',
+                'message' => 'Bagaimana prosedur untuk meminjam buku di perpustakaan?',
+                'status' => 'read',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'name' => 'Jane Smith',
+                'address' => 'janesmith@gmail.com',
+                'subject' => 'Saran Koleksi Buku',
+                'message' => 'Saya ingin memberikan saran untuk menambah koleksi buku teknologi terbaru.',
+                'status' => 'unread',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'name' => 'Ahmad Rizki',
+                'address' => 'ahmad.rizki@gmail.com',
+                'subject' => 'Kendala Akses E-Book',
+                'message' => 'Saya mengalami kesulitan dalam mengakses e-book. Mohon bantuan.',
+                'status' => 'read',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'name' => 'Sarah Wilson',
+                'address' => 'sarah.wilson@gmail.com',
+                'subject' => 'Jadwal Operasional',
+                'message' => 'Apakah perpustakaan buka pada hari Sabtu dan Minggu?',
+                'status' => 'unread',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
+                'name' => 'Budi Santoso',
+                'address' => 'budi.santoso@gmail.com',
+                'subject' => 'Kerjasama Perpustakaan',
+                'message' => 'Kami ingin mengajukan proposal kerjasama antar perpustakaan.',
+                'status' => 'read',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+            [
                 'name' => 'johndoe',
                 'address' => 'johndoe@gmail.com',
                 'subject' => 'Subject 01',
@@ -60,7 +105,7 @@ class EmailTableSeeder extends Seeder
                 'status' => 'unread',
                 'created_at' => now(),
                 'updated_at' => now()
-            ],]);
-        factory(\App\Email::class, 32)->create();
+            ],
+        ]);
     }
 }

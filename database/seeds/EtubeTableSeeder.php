@@ -13,33 +13,35 @@ class EtubeTableSeeder extends Seeder
     {
         DB::table('etube')->insert([
             [
-                'judul' => 'Android',
+                'judul' => 'Android Development',
                 'link' => 'Emr2q3DYlN0',
-                'deskripsi' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error doloribus dolor libero. Adipisci odio nemo quod omnis accusamus voluptatibus, repellat ab, ullam, voluptate delectus similique quidem eligendi suscipit aspernatur.</p>',
+                'deskripsi' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error doloribus dolor libero.</p>',
                 'author' => 'Imam Firmansyah',
                 'created_at' => now(),
                 'updated_at' => now(),
                 'id_kategori' => '1',
-                'views' => '719',
-            ], [
-                'judul' => 'Laravel',
-                'link' => 'ISK6o60cCQo',
-                'deskripsi' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptate possimus labore non necessitatibus provident soluta officia molestiae sint enim debitis quae quia reiciendis, qui quod ab atque, nobis ea?</p>',
-                'author' => 'Neddy AP',
+                'views' => '405'
+            ],
+            [
+                'judul' => 'Web Development',
+                'link' => 'dQw4w9WgXcQ',
+                'deskripsi' => '<p>Tutorial pengembangan web menggunakan teknologi modern.</p>',
+                'author' => 'John Doe',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'id_kategori' => '1',
-                'views' => '124',
-            ], [
-                'judul' => 'Python',
-                'link' => 'SsUF-7X3ehM',
-                'deskripsi' => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptate possimus labore non necessitatibus provident soluta officia molestiae sint enim debitis quae quia reiciendis, qui quod ab atque, nobis ea?</p>',
-                'author' => 'Neddy AP',
+                'id_kategori' => '6',
+                'views' => '302'
+            ],
+            [
+                'judul' => 'Data Science Basics',
+                'link' => 'jK7r4VZ',
+                'deskripsi' => '<p>Pengenalan dasar-dasar ilmu data dan analisis.</p>',
+                'author' => 'Jane Smith',
                 'created_at' => now(),
                 'updated_at' => now(),
-                'id_kategori' => '1',
-                'views' => '405',
-            ],]);
-        factory(\App\Etube::class, 22)->create();
+                'id_kategori' => '7',
+                'views' => '253'
+            ]
+        ]);
     }
 }

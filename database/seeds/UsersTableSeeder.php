@@ -13,8 +13,8 @@ class UsersTableSeeder extends Seeder
     {
         DB::table('users')->insert([
             [
-                'name' => 'Imam Firmansyah',
-                'username' => 'Firmansyah',
+                'name' => 'Neddy Avgha P',
+                'username' => 'Prasetio',
                 'email' => 'admin@gmail.com',
                 'password' => Hash::make('admin'),
                 'title' => 'M.Kom',
